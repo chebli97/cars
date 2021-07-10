@@ -21,45 +21,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.App{
-  min-height: 70vh;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas:
-  "header"
-  "main"
-  "footer"
-  ;
 
-}
-.container{
+.article{
+ 
   background-color: #FFFFFF;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;  padding: 0px; 
  border-radius: 2% 2% 2% 2%;
- margin-bottom: 10%;
+  width: 100%;
+  margin: 8px;
+  flex: 0 1 22%;
+ margin-bottom: 2%;
 }
 
-
-.image-box{
-    width: 300px;
-   padding: 0px;
+.article:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.image-box img{
+    width: 301px;
    border-radius: 2% 2% 0% 0%;
-   transition: .2s ease-out;
   }
 .box-cars-home{
-  display: grid;
-  grid-gap: 10px 10px;
-  grid-template-columns: auto auto auto;
-  padding: 100px;
-  width: 100px;
-  height: 650px;
-  margin-left: 15%;
-  margin-top: -20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2%;
+ }
 
-}
-.container:hover{
-transform:scale(1.02);
-  cursor:pointer;
-}
 
 h1.name-style {
   font-family: Lato;
@@ -93,7 +81,7 @@ h1.title-of-box {
   color: #454444;
   background-color: #F4F6F5;
   border-style: none;
-  margin-top: 4%;
+  margin-top: 2%;
 }
 .prix{
   font-family: Muli;
@@ -114,19 +102,51 @@ h3.km {
   text-transform: capitalize;
   margin-left: 10%;
 }
-.flech{
-  margin-top: 15%;
-  margin-left: 17%;
+
+.toggle{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;  
+  margin-top: -40%;
+  }
+
+
+.search-button{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 30px;
 }
-.flech:hover{
-  cursor:pointer;
-  transform:scale(1.02);
+
+.search-button button{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 0.9375rem 1rem;
+  font-size: 1.17rem;
+  font-weight: 900;
+  line-height: 1;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0.3125rem;
+  transition: background-color 0.3s ease-in-out 0s;
+  cursor: pointer;
+  opacity: 1;
+  background-color: rgb(40, 40, 66);
 }
-.flech1{
-  margin-left: 60%;
-  margin-top: 15%;
+.left-arrow:hover{
+  transform: scale(1.02);
+  cursor: pointer;
 }
-.flech1:hover{
-  cursor:pointer;
-  transform:scale(1.02);
+.right-arrow:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.left-arrow{
+  margin-left: 10%;
+}
+.right-arrow{
+  margin-right: 10%;
 }
